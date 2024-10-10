@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="alert alert-success" role="alert">SuccessAlert!!!</div>
+<div class="alert alert-danger" role="alert">DangerAlert!!!</div>
+<div class="alert alert-warning" role="alert">WarningAlert!!!</div>
+<button type="button" class="btn btn-primary">Primary</button>
+<a href="#" class="btn btn-secondary">Secondary</a>
+<button type="button" class="btn btn-danger">Danger</button>
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Bootstrap dropdown
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="#">Item 1</a></li>
+    <li><a class="dropdown-item" href="#">Item 2</a></li>
+    <li><a class="dropdown-item" href="#">Item 3</a></li>
+  </ul>
+</div>
+<div class="row">
+  <div class="col-xs-12 col-sm-10 col-md-6 bg-primary">Column 1</div>
+  <div class="col-xs-12 col-sm-2 col-md-2 bg-danger">Column 2</div>
+  <div class="col bg-success">Column 3</div>
+</div>
+{% endblock %}
